@@ -1,0 +1,28 @@
+
+# Getting and Cleaning Data, Code Book for Week 4 Project
+
+Original data can be found here:
+
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+## Identifiers
+
+The tidy data set submitted for this project contains the following identifiers:
+
+* `subject` : The identifier of the volunteer that the row contains values for.  This is a number between 1 and 30.  There were 30 volunteers in the study.
+* `activity` : The activity that the row contains values for.  Activities are one of: 
+    + walking
+    + walking_upstairs
+    + walking_downstairs
+    + sitting 
+    + standing
+    + laying
+
+The rest of the identifiers are a subset of original identifiers that represent the mean and standard deviation for the types of signals measured in the study. From the original set, these are the identifiers that included std() or mean().  Once the subset was selected, the  names were modified from the original naming in the following ways:
+
+* Made lowercase
+* Brackets were removed.  For example, std() changed to std
+* Hyphens removed
+
+For details of the original naming and meaning for the measurements, please see the README.txt in the original dataset and feature_info.txt files in the referenced dataset.
+
